@@ -1,0 +1,19 @@
+ O componente em React é uma função, e como uma função em JavaScript, ele pode ter outras funções internas.
+   Além disso, dentro dessa função, é possível criar outras estruturas e lógica de controle. */
+
+Também é possivel criar elementos HTML dentro de contantes JSX
+
+-Em aplicacoes Vanilla as tecnologias JS html e css  são separadas em pastas, mas no react é um hibrido
+está tudo dentro de componentes. São varios componente de headar > menu um dentro do outro
+
+-Posso editar os componenter individualmente, mesmo tempo um padrão editavel
+<div className={`
+            flex
+            p-3
+            justify-center
+            bg-blue-900
+            border-2
+            rounded-md
+            ${props.className ?? ""}
+            
+        `}>
