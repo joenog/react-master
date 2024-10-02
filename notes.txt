@@ -17,3 +17,8 @@ está tudo dentro de componentes. São varios componente de headar > menu um den
             ${props.className ?? ""}
             
         `}>
+
+
+instalando icones no projeto
+npm install @tablet/icons-react
+

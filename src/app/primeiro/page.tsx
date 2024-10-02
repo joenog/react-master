@@ -1,3 +1,5 @@
+import Pagina from "@/components/templates/Pagina";
+
 {/* O componente em React é uma função, e como uma função em JavaScript, ele pode ter outras funções internas.
    Além disso, dentro dessa função, é possível criar outras estruturas e lógica de controle. */
 
@@ -28,17 +30,20 @@ export default function Primeiro() {
     const PI = 3.14159;
 
     return (
-        <div>
-            <h1>Primeiro componente</h1>
+        <Pagina>
 
-            <div className="flex flex-col">
-                <span>{1+1}</span>
-                <span>{Math.random()*100}</span>
-                <span>{anoAtual()}</span>
+            <div>
+                <h1>Primeiro componente</h1>
+
+                <div className="flex flex-col">
+                    <span>{1+1}</span>
+                    <span>{Math.random()*100}</span>
+                    <span>{anoAtual()}</span>
+                </div>
+                    <span>{gerarLista()}</span>
+                    <span>{PI * Math.pow(raio, 2)}</span>
+                    {titulo}
             </div>
-                <span>{gerarLista()}</span>
-                <span>{PI * Math.pow(raio, 2)}</span>
-                {titulo}
-        </div>
+        </Pagina>
     )
 }
